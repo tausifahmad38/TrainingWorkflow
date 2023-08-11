@@ -137,8 +137,8 @@ public class TaskController implements JavaDelegate {
 			Task glo=(Task) execution.getVariable("glob");
 			execution.setVariable("ErrorId", Long.toString(glob.getId()));
 			User s=camundaTask(glob);
-			//execution.setVariable("Email",s.getEmail());
-			execution.setVariable("Email","ahmadtausif38@gmail.com");
+			execution.setVariable("Email",s.getEmail());
+			//execution.setVariable("Email","ahmadtausif38@gmail.com");
 			execution.setVariable("username",s.getName());
 			execution.setVariable("ProjectAssignation", s.getProjAssignedStatus());
 			log.debug(s.getProjAssignedStatus());
