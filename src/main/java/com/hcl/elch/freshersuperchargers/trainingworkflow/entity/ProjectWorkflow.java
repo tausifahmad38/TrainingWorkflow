@@ -26,8 +26,9 @@ public class ProjectWorkflow {
 	@Column(name = "Name")
 	private String Name;
 	
-	@OneToOne
-	private User user;
+	@ManyToOne()
+    	@JoinColumn(name = "user_sapId", referencedColumnName="sapId")
+    	private User user;
 	
 	@Column(name="taskId")
 	private long taskId;
