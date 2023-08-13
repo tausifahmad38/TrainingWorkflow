@@ -56,6 +56,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Assesment for "+Task);
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
@@ -90,6 +91,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Next task assigned");
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
@@ -123,6 +125,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+		helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Training completion");
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
@@ -156,6 +159,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Result for "+task +" assesment.");
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
@@ -264,6 +268,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Approval for "+task);
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
