@@ -195,6 +195,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("POC for "+Task);
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
@@ -229,6 +230,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Result for "+task +" POC.");
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
@@ -307,6 +309,7 @@ public class EmailSenderService {
 		 
 		   MimeMessage message = mailSender.createMimeMessage();
 	       MimeMessageHelper helper = new MimeMessageHelper(message, true);
+			helper.setFrom("tausif.ahmad@hcl.com");
 	       helper.setSubject("Approval for "+task+" POC.");
 	       helper.setTo(Email);
 	       helper.setText(emailContent, true);
